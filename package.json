@@ -1,0 +1,35 @@
+{
+  "name": "schedule-me-gen",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "The schedule algorithm to schedule school timetables",
+  "main": "./lib",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc -p ./tsconfig.build.json"
+  },
+  "keywords": [
+    "genetic",
+    "algorithm",
+    "timetable",
+    "school"
+  ],
+  "author": "jaxkodex",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-typescript": "^7.27.1",
+    "@stdlib/types": "^0.4.3",
+    "@swc/cli": "^0.7.5",
+    "@swc/core": "^1.11.24",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.15.18",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@stdlib/random": "^0.3.3"
+  }
+}

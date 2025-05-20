@@ -1,0 +1,584 @@
+---
+Subjects:
+  - name: Math
+  - name: Languague
+  - name: English
+  - name: Art
+  - name: Social Studies
+  - name: Civics
+  - name: Physical Education
+  - name: Religion
+  - name: Cience And Technology
+  - name: Work Education
+  - name: Tutor
+Teachers:
+  - name: Juan
+  - name: Pedro
+  - name: Manuel
+  - name: Christian
+  - name: Robert
+  - name: Jorge
+  - name: Marcos
+  - name: Rafael
+  - name: Freddy
+  - name: Daniel
+GradeLevels:
+  - name: PRIMERO
+GradeSection:
+  - level:
+      name: PRIMERO
+    section: A
+  - level:
+      name: PRIMERO
+    section: B
+CourseRequirements:
+  - level:
+      name: PRIMERO
+    subject:
+      name: Math
+    requiredHours: 6
+  - level:
+      name: PRIMERO
+    subject:
+      name:  Languague
+    requiredHours: 6
+  - level:
+      name: PRIMERO
+    subject:
+      name: English
+    requiredHours: 5
+  - level:
+      name: PRIMERO
+    subject:
+      name: Art
+    requiredHours: 3
+  - level:
+      name: PRIMERO
+    subject:
+      name: Social Studies
+    requiredHours: 4
+  - level:
+      name: PRIMERO
+    subject:
+      name: Civics
+    requiredHours: 5
+  - level:
+      name: PRIMERO
+    subject:
+      name: Physical Education
+    requiredHours: 3
+  - level:
+      name: PRIMERO
+    subject:
+      name: Religion
+    requiredHours: 2
+  - level:
+      name: PRIMERO
+    subject:
+      name: Cience And Technology
+    requiredHours: 6
+  - level:
+      name: PRIMERO
+    subject:
+      name: Work Education
+    requiredHours: 3
+  - level:
+      name: PRIMERO
+    subject:
+      name: Tutor
+    requiredHours: 2
+CourseOffering:
+  - requirement:
+      level:
+        name: PRIMERO
+      subject:
+        name: Math
+      requiredHours: 6
+    gradeSection:
+      level:
+        name: PRIMERO
+      section: A
+    teacher:
+      name: Juan
+  - requirement:
+      level:
+        name: PRIMERO
+      subject:
+        name:  Languague
+      requiredHours: 6
+    gradeSection:
+      level:
+        name: PRIMERO
+      section: A
+    teacher:
+      name: Pedro
+  - requirement:
+      level:
+        name: PRIMERO
+      subject:
+        name: English
+      requiredHours: 5
+    gradeSection:
+      level:
+        name: PRIMERO
+      section: A
+    teacher:
+      name: Manuel
+  - requirement:
+      level:
+        name: PRIMERO
+      subject:
+        name: Art
+      requiredHours: 3
+    gradeSection:
+      level:
+        name: PRIMERO
+      section: A
+    teacher:
+      name: Christian
+  - requirement:
+      level:
+        name: PRIMERO
+      subject:
+        name: Social Studies
+      requiredHours: 4
+    gradeSection:
+      level:
+        name: PRIMERO
+      section: A
+    teacher:
+      name: Robert
+  - requirement:
+      level:
+        name: PRIMERO
+      subject:
+        name: Civics
+      requiredHours: 5
+    gradeSection:
+      level:
+        name: PRIMERO
+      section: A
+    teacher:
+      name: Jorge
+  - requirement:
+      level:
+        name: PRIMERO
+      subject:
+        name: Physical Education
+      requiredHours: 3
+    gradeSection:
+      level:
+        name: PRIMERO
+      section: A
+    teacher:
+      name: Marcos
+  - requirement:
+      level:
+        name: PRIMERO
+      subject:
+        name: Religion
+      requiredHours: 2
+    gradeSection:
+      level:
+        name: PRIMERO
+      section: A
+    teacher:
+      name: Rafael
+  - requirement:
+      level:
+        name: PRIMERO
+      subject:
+        name: Cience And Technology
+      requiredHours: 6
+    gradeSection:
+      level:
+        name: PRIMERO
+      section: A
+    teacher:
+      name: Daniel
+  - requirement:
+      level:
+        name: PRIMERO
+      subject:
+        name: Work Education
+      requiredHours: 3
+    gradeSection:
+      level:
+        name: PRIMERO
+      section: A
+    teacher:
+      name: Freddy
+  - requirement:
+      level:
+        name: PRIMERO
+      subject:
+        name: Tutor
+      requiredHours: 2
+    gradeSection:
+      level:
+        name: PRIMERO
+      section: A
+    teacher:
+      name: Daniel
+  - requirement:
+      level:
+        name: PRIMERO
+      subject:
+        name: Math
+      requiredHours: 6
+    gradeSection:
+      level:
+        name: PRIMERO
+      section: A
+    teacher:
+      name: Juan
+  - requirement:
+      level:
+        name: PRIMERO
+      subject:
+        name:  Languague
+      requiredHours: 6
+    gradeSection:
+      level:
+        name: PRIMERO
+      section: A
+    teacher:
+      name: Pedro
+  - requirement:
+      level:
+        name: PRIMERO
+      subject:
+        name: English
+      requiredHours: 5
+    gradeSection:
+      level:
+        name: PRIMERO
+      section: A
+    teacher:
+      name: Manuel
+  - requirement:
+      level:
+        name: PRIMERO
+      subject:
+        name: Art
+      requiredHours: 3
+    gradeSection:
+      level:
+        name: PRIMERO
+      section: A
+    teacher:
+      name: Christian
+  - requirement:
+      level:
+        name: PRIMERO
+      subject:
+        name: Social Studies
+      requiredHours: 4
+    gradeSection:
+      level:
+        name: PRIMERO
+      section: A
+    teacher:
+      name: Robert
+  - requirement:
+      level:
+        name: PRIMERO
+      subject:
+        name: Civics
+      requiredHours: 5
+    gradeSection:
+      level:
+        name: PRIMERO
+      section: A
+    teacher:
+      name: Jorge
+  - requirement:
+      level:
+        name: PRIMERO
+      subject:
+        name: Physical Education
+      requiredHours: 3
+    gradeSection:
+      level:
+        name: PRIMERO
+      section: A
+    teacher:
+      name: Marcos
+  - requirement:
+      level:
+        name: PRIMERO
+      subject:
+        name: Religion
+      requiredHours: 2
+    gradeSection:
+      level:
+        name: PRIMERO
+      section: A
+    teacher:
+      name: Rafael
+  - requirement:
+      level:
+        name: PRIMERO
+      subject:
+        name: Cience And Technology
+      requiredHours: 6
+    gradeSection:
+      level:
+        name: PRIMERO
+      section: A
+    teacher:
+      name: Daniel
+  - requirement:
+      level:
+        name: PRIMERO
+      subject:
+        name: Work Education
+      requiredHours: 3
+    gradeSection:
+      level:
+        name: PRIMERO
+      section: A
+    teacher:
+      name: Freddy
+  - requirement:
+      level:
+        name: PRIMERO
+      subject:
+        name: Tutor
+      requiredHours: 2
+    gradeSection:
+      level:
+        name: PRIMERO
+      section: A
+    teacher:
+      name: Freddy
+TimeTable:
+  - duration: 45
+    unit: MINUTES
+    start: "8:00"
+    end: "8:45"
+    day: MONDAY
+  - duration: 45
+    unit: MINUTES
+    start: "8:45"
+    end: "9:30"
+    day: MONDAY
+  - duration: 45
+    unit: MINUTES
+    start: "9:30"
+    end: "10:15"
+    day: MONDAY
+  - duration: 45
+    unit: MINUTES
+    start: "10:15"
+    end: "11:00"
+    day: MONDAY
+  - duration: 45
+    unit: MINUTES
+    start: "11:20"
+    end: "12:05"
+    day: MONDAY
+  - duration: 45
+    unit: MINUTES
+    start: "12:05"
+    end: "12:50"
+    day: MONDAY
+  - duration: 45
+    unit: MINUTES
+    start: "13:20"
+    end: "14:05"
+    day: MONDAY
+  - duration: 45
+    unit: MINUTES
+    start: "14:05"
+    end: "14:50"
+    day: MONDAY
+  - duration: 45
+    unit: MINUTES
+    start: "14:50"
+    end: "15:35"
+    day: MONDAY
+
+  - duration: 45
+    unit: MINUTES
+    start: "8:00"
+    end: "8:45"
+    day: TUESDAY
+  - duration: 45
+    unit: MINUTES
+    start: "8:45"
+    end: "9:30"
+    day: TUESDAY
+  - duration: 45
+    unit: MINUTES
+    start: "9:30"
+    end: "10:15"
+    day: TUESDAY
+  - duration: 45
+    unit: MINUTES
+    start: "10:15"
+    end: "11:00"
+    day: TUESDAY
+  - duration: 45
+    unit: MINUTES
+    start: "11:20"
+    end: "12:05"
+    day: TUESDAY
+  - duration: 45
+    unit: MINUTES
+    start: "12:05"
+    end: "12:50"
+    day: TUESDAY
+  - duration: 45
+    unit: MINUTES
+    start: "13:20"
+    end: "14:05"
+    day: TUESDAY
+  - duration: 45
+    unit: MINUTES
+    start: "14:05"
+    end: "14:50"
+    day: TUESDAY
+  - duration: 45
+    unit: MINUTES
+    start: "14:50"
+    end: "15:35"
+    day: TUESDAY
+
+  - duration: 45
+    unit: MINUTES
+    start: "8:00"
+    end: "8:45"
+    day: WEDNESDAY
+  - duration: 45
+    unit: MINUTES
+    start: "8:45"
+    end: "9:30"
+    day: WEDNESDAY
+  - duration: 45
+    unit: MINUTES
+    start: "9:30"
+    end: "10:15"
+    day: WEDNESDAY
+  - duration: 45
+    unit: MINUTES
+    start: "10:15"
+    end: "11:00"
+    day: WEDNESDAY
+  - duration: 45
+    unit: MINUTES
+    start: "11:20"
+    end: "12:05"
+    day: WEDNESDAY
+  - duration: 45
+    unit: MINUTES
+    start: "12:05"
+    end: "12:50"
+    day: WEDNESDAY
+  - duration: 45
+    unit: MINUTES
+    start: "13:20"
+    end: "14:05"
+    day: WEDNESDAY
+  - duration: 45
+    unit: MINUTES
+    start: "14:05"
+    end: "14:50"
+    day: WEDNESDAY
+  - duration: 45
+    unit: MINUTES
+    start: "14:50"
+    end: "15:35"
+    day: WEDNESDAY
+
+  - duration: 45
+    unit: MINUTES
+    start: "8:00"
+    end: "8:45"
+    day: THURSDAY
+  - duration: 45
+    unit: MINUTES
+    start: "8:45"
+    end: "9:30"
+    day: THURSDAY
+  - duration: 45
+    unit: MINUTES
+    start: "9:30"
+    end: "10:15"
+    day: THURSDAY
+  - duration: 45
+    unit: MINUTES
+    start: "10:15"
+    end: "11:00"
+    day: THURSDAY
+  - duration: 45
+    unit: MINUTES
+    start: "11:20"
+    end: "12:05"
+    day: THURSDAY
+  - duration: 45
+    unit: MINUTES
+    start: "12:05"
+    end: "12:50"
+    day: THURSDAY
+  - duration: 45
+    unit: MINUTES
+    start: "13:20"
+    end: "14:05"
+    day: THURSDAY
+  - duration: 45
+    unit: MINUTES
+    start: "14:05"
+    end: "14:50"
+    day: THURSDAY
+  - duration: 45
+    unit: MINUTES
+    start: "14:50"
+    end: "15:35"
+    day: THURSDAY
+
+  - duration: 45
+    unit: MINUTES
+    start: "8:00"
+    end: "8:45"
+    day: FRIDAY
+  - duration: 45
+    unit: MINUTES
+    start: "8:45"
+    end: "9:30"
+    day: FRIDAY
+  - duration: 45
+    unit: MINUTES
+    start: "9:30"
+    end: "10:15"
+    day: FRIDAY
+  - duration: 45
+    unit: MINUTES
+    start: "10:15"
+    end: "11:00"
+    day: FRIDAY
+  - duration: 45
+    unit: MINUTES
+    start: "11:20"
+    end: "12:05"
+    day: FRIDAY
+  - duration: 45
+    unit: MINUTES
+    start: "12:05"
+    end: "12:50"
+    day: FRIDAY
+  - duration: 45
+    unit: MINUTES
+    start: "13:20"
+    end: "14:05"
+    day: FRIDAY
+  - duration: 45
+    unit: MINUTES
+    start: "14:05"
+    end: "14:50"
+    day: FRIDAY
+  - duration: 45
+    unit: MINUTES
+    start: "14:50"
+    end: "15:35"
+    day: FRIDAY
