@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "outDir": "lib",
+    "outDir": "dist",
     "paths": {
       "@/*": ["src/*"]
-    }
+    },
+    "declaration": true
   },
   "include": ["src/**/*"],
   "exclude": []

@@ -1,9 +1,11 @@
 {
-  "name": "schedule-me-gen",
+  "name": "@libre-net-pe/schedule-me-gen",
   "type": "module",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "The schedule algorithm to schedule school timetables",
-  "main": "./lib",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["/dist"],
   "scripts": {
     "test": "jest",
     "build": "tsc -p ./tsconfig.build.json"
@@ -31,5 +33,9 @@
   },
   "dependencies": {
     "@stdlib/random": "^0.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/libre-net-pe/schedule-me-algo.git"
   }
 }
