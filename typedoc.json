@@ -1,0 +1,21 @@
+{
+  "entryPoints": ["src/index.ts"],
+  "entryPointStrategy": "expand",
+  "out": "docs",
+  "name": "Schedule Me Algorithm - Documentation",
+  "readme": "README.md",
+  "excludeExternals": true,
+  "excludePrivate": false,
+  "excludeProtected": false,
+  "hideGenerator": true,
+  "sort": ["source-order"],
+  "navigationLinks": {
+    "GitHub": "https://github.com/libre-net-pe/schedule-me-algo"
+  },
+  "sidebarLinks": {
+    "Repository": "https://github.com/libre-net-pe/schedule-me-algo"
+  },
+  "includeVersion": true,
+  "searchInComments": true,
+  "cleanOutputDir": true
+}

@@ -5,11 +5,13 @@
   "description": "The schedule algorithm to schedule school timetables",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": ["/dist"],
+  "files": [
+    "/dist"
+  ],
   "scripts": {
     "test": "jest",
     "build": "tsc -p ./tsconfig.build.json",
-    "docs:build": "jsdoc -c jsdoc.conf.json",
+    "docs:build": "typedoc",
     "docs:serve": "npx http-server docs -p 8080"
   },
   "keywords": [
@@ -32,7 +34,7 @@
     "babel-jest": "^29.7.0",
     "http-server": "^14.1.1",
     "jest": "^29.7.0",
-    "jsdoc": "^4.0.4",
+    "typedoc": "^0.26.11",
     "typescript": "^5.8.3"
   },
   "dependencies": {
