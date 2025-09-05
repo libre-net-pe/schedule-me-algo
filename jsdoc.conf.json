@@ -1,0 +1,24 @@
+{
+  "source": {
+    "include": ["./src"],
+    "includePattern": "\\.(js|ts)$",
+    "exclude": ["node_modules/", "**/__tests__/**", "**/*.test.ts", "**/*.spec.ts"],
+    "excludePattern": "(node_modules/|docs/|dist/|lib/)"
+  },
+  "opts": {
+    "destination": "./docs/",
+    "recurse": true,
+    "readme": "./README.md"
+  },
+  "plugins": [
+    "plugins/markdown"
+  ],
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false
+  },
+  "metadata": {
+    "title": "Schedule Me Algorithm - JSDoc Documentation",
+    "version": "0.0.1"
+  }
+}
