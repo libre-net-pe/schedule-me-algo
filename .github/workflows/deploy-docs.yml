@@ -20,6 +20,10 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      CI: true
+      NODE_ENV: production
+      NPM_CONFIG_LOGLEVEL: verbose
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -30,13 +34,49 @@ jobs:
           node-version: '22'
           cache: 'npm'
           
+      - name: Debug npm environment
+        run: |
+          echo "Node version: $(node --version)"
+          echo "NPM version: $(npm --version)"
+          echo "NPM config:"
+          npm config list
+          echo "Package.json exists: $(test -f package.json && echo 'yes' || echo 'no')"
+          echo "Package-lock.json exists: $(test -f package-lock.json && echo 'yes' || echo 'no')"
+          echo "Current directory: $(pwd)"
+          echo "Directory contents:"
+          ls -la
+          
       - name: Install dependencies
         run: |
-          npm ci --timeout=300000
+          echo "Starting npm ci with debug output..."
+          npm ci --timeout=300000 --verbose --no-audit
         
+      - name: Debug package.json scripts
+        run: |
+          echo "Available npm scripts:"
+          npm run
+          echo "Package.json scripts section:"
+          cat package.json | jq '.scripts' || echo "Failed to parse package.json scripts"
+          
       - name: Generate TypeDoc documentation
-        run: npm run docs:build
+        run: |
+          echo "Starting documentation generation..."
+          npm run docs:build --verbose
+          echo "Documentation generation completed"
+          echo "Generated files in docs directory:"
+          ls -la docs/ || echo "docs directory not found"
         
+      - name: Validate documentation output
+        run: |
+          echo "Validating documentation was generated correctly..."
+          if [ ! -d "docs" ]; then
+            echo "ERROR: docs directory does not exist!"
+            exit 1
+          fi
+          echo "Documentation directory contents:"
+          find docs -type f -name "*.html" | head -10 || echo "No HTML files found"
+          echo "Total files in docs: $(find docs -type f | wc -l)"
+          
       - name: Setup Pages
         uses: actions/configure-pages@v5
         
