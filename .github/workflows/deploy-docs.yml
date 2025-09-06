@@ -50,7 +50,7 @@ jobs:
         run: |
           echo "Starting npm ci with debug output..."
           # npm ci --timeout=300000 --verbose --no-audit
-          npm Install
+          npm install
         
       - name: Debug package.json scripts
         run: |
