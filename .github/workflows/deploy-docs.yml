@@ -34,6 +34,12 @@ jobs:
           node-version: '22'
           cache: 'npm'
           
+      - name: Configure npm registry
+        run: |
+          echo "Setting npm registry to public registry..."
+          npm config set registry https://registry.npmjs.org/
+          echo "Registry configured to: $(npm config get registry)"
+          
       - name: Debug npm environment
         run: |
           echo "Node version: $(node --version)"
@@ -49,7 +55,7 @@ jobs:
       - name: Install dependencies
         run: |
           echo "Starting npm ci with debug output..."
-          npm install
+          npm ci --timeout=300000 --verbose --no-audit
         
       - name: Debug package.json scripts
         run: |
