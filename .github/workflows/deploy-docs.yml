@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       CI: true
-      NODE_ENV: production
+      # NODE_ENV: production
       NPM_CONFIG_LOGLEVEL: verbose
     steps:
       - name: Checkout
