@@ -17,8 +17,8 @@ export { FitnessStrategy } from './fitness/FitnessStrategy';
 export { RuleBasedFitnessStrategy } from './fitness/RuleBasedFitnessStrategy';
 
 // Constraints
-export { PopulationConstriant } from './fitness/metrics/PopulationConstriant';
-export { DuplicatesContraint } from './fitness/metrics/DuplicatesConstraint';
+export { PopulationConstraint } from './fitness/metrics/PopulationConstraint';
+export { DuplicatesConstraint } from './fitness/metrics/DuplicatesConstraint';
 export { RequirementsConstraint } from './fitness/metrics/RequirementsConstraint';
 
 // Generation strategies
