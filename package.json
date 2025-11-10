@@ -1,7 +1,7 @@
 {
   "name": "@libre-net-pe/schedule-me-gen",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The schedule algorithm to schedule school timetables",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
