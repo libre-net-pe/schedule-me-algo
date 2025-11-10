@@ -1,8 +1,8 @@
 import { Codec } from "../../codec/Codec";
 import { Chromosome } from "../../types/genetics/Chromosome";
-import { PopulationConstriant } from "./PopulationConstriant";
+import { PopulationConstraint } from "./PopulationConstraint";
 
-export class RequirementsConstraint implements PopulationConstriant {
+export class RequirementsConstraint implements PopulationConstraint {
   codec: Codec
 
   constructor(codec: Codec) {

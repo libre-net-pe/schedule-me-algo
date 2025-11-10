@@ -8,7 +8,7 @@ function sumRequiredHours(offerings: Array<Offering>) {
   return offerings.reduce((total, offering) => total + offering.requiredHours, 0);
 }
 
-export function initizalizePopulation(codec: Codec, populationSize: number): Population {
+export function initializePopulation(codec: Codec, populationSize: number): Population {
   let population: Population = []
   const fitnessStrategy = new RuleBasedFitnessStrategy(codec)
   const totalCombinations = codec.getTotalCombinations()

@@ -1,7 +1,7 @@
 import { Chromosome } from "../../types/genetics/Chromosome";
-import { PopulationConstriant } from "./PopulationConstriant";
+import { PopulationConstraint } from "./PopulationConstraint";
 
-export class DuplicatesContraint implements PopulationConstriant {
+export class DuplicatesConstraint implements PopulationConstraint {
   compute(chromosome: Chromosome): number {
     const frequencyMap = new Map<number, number>();
     let duplicates = 0;

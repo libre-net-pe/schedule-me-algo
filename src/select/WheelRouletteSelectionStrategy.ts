@@ -22,6 +22,10 @@ export class WheelRouletteSelectionStrategy implements SelectionStrategy {
             return sum >= wheelPoint
         })
 
-        return this.population.at(selectedPosition)
+        const selected = this.population.at(selectedPosition)
+        if (!selected) {
+            throw new Error('Failed to select an individual from population')
+        }
+        return selected
     }
 }

@@ -1,11 +1,11 @@
-import { DuplicatesContraint } from "../DuplicatesConstraint";
+import { DuplicatesConstraint } from "../DuplicatesConstraint";
 import { Chromosome } from "../../../types/genetics/Chromosome";
 
 describe('DuplicatesConstraint', () => {
-    let constraint: DuplicatesContraint;
+    let constraint: DuplicatesConstraint;
 
     beforeEach(() => {
-        constraint = new DuplicatesContraint();
+        constraint = new DuplicatesConstraint();
     });
 
     describe('compute', () => {
