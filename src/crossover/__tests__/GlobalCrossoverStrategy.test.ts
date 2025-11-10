@@ -26,8 +26,8 @@ describe('GlobalCrossoverStrategy', () => {
     const [child1, child2, crossoverPoint] = strategy.crossover(parent1, parent2);
 
     expect(crossoverPoint).toBe(5); // No crossover, point is at end
-    expect(child1).toEqual([6, 7, 8, 9, 10]); // All from parent2
-    expect(child2).toEqual([1, 2, 3, 4, 5]); // All from parent1
+    expect(child1).toEqual([1, 2, 3, 4, 5]); // All from parent1
+    expect(child2).toEqual([6, 7, 8, 9, 10]); // All from parent2
   });
 
   test('should produce children of same length as parents', () => {

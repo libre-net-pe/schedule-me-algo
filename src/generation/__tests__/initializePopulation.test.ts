@@ -1,10 +1,10 @@
-import { initizalizePopulation } from '../initizalizePopulation';
+import { initializePopulation } from '../initializePopulation';
 import { Codec } from '@/codec/Codec';
 import { TimeSlot } from '@/types/domain/TimeSlot';
 import { Day } from '@/types/domain/Day';
 import { Offering } from '@/types/domain/Offering';
 
-describe('initizalizePopulation', () => {
+describe('initializePopulation', () => {
   const createTestCodec = () => {
     const timeSlots: TimeSlot[] = [
       { day: Day.Monday, startTime: '08:00', endTime: '08:45', durationInMinutes: 45 },
@@ -27,7 +27,7 @@ describe('initizalizePopulation', () => {
     const codec = createTestCodec();
     const populationSize = 10;
 
-    const population = initizalizePopulation(codec, populationSize);
+    const population = initializePopulation(codec, populationSize);
 
     expect(population).toHaveLength(populationSize);
   });
@@ -36,7 +36,7 @@ describe('initizalizePopulation', () => {
     const codec = createTestCodec();
     const populationSize = 5;
 
-    const population = initizalizePopulation(codec, populationSize);
+    const population = initializePopulation(codec, populationSize);
 
     // Total required hours is 2
     population.forEach(individual => {
@@ -48,7 +48,7 @@ describe('initizalizePopulation', () => {
     const codec = createTestCodec();
     const populationSize = 5;
 
-    const population = initizalizePopulation(codec, populationSize);
+    const population = initializePopulation(codec, populationSize);
 
     population.forEach(individual => {
       expect(typeof individual.fitness).toBe('number');
@@ -60,7 +60,7 @@ describe('initizalizePopulation', () => {
     const codec = createTestCodec();
     const populationSize = 5;
 
-    const population = initizalizePopulation(codec, populationSize);
+    const population = initializePopulation(codec, populationSize);
 
     population.forEach(individual => {
       expect(individual.parent1).toBeNull();
@@ -72,7 +72,7 @@ describe('initizalizePopulation', () => {
     const codec = createTestCodec();
     const populationSize = 5;
 
-    const population = initizalizePopulation(codec, populationSize);
+    const population = initializePopulation(codec, populationSize);
 
     population.forEach(individual => {
       expect(individual.crossoverPoint).toBe(-1);
@@ -84,7 +84,7 @@ describe('initizalizePopulation', () => {
     const populationSize = 10;
     const totalCombinations = codec.getTotalCombinations();
 
-    const population = initizalizePopulation(codec, populationSize);
+    const population = initializePopulation(codec, populationSize);
 
     population.forEach(individual => {
       individual.chromosome.forEach(allele => {
@@ -97,7 +97,7 @@ describe('initizalizePopulation', () => {
   test('should handle population size of 1', () => {
     const codec = createTestCodec();
 
-    const population = initizalizePopulation(codec, 1);
+    const population = initializePopulation(codec, 1);
 
     expect(population).toHaveLength(1);
     expect(population[0].chromosome).toBeDefined();
@@ -107,7 +107,7 @@ describe('initizalizePopulation', () => {
     const codec = createTestCodec();
     const populationSize = 10;
 
-    const population = initizalizePopulation(codec, populationSize);
+    const population = initializePopulation(codec, populationSize);
 
     // Check that not all individuals are identical
     const firstChromosome = JSON.stringify(population[0].chromosome);

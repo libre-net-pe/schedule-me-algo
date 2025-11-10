@@ -149,7 +149,7 @@ console.log('Schedule:', codec.decode(result.best.chromosome));
 You can add custom constraints by implementing the `PopulationConstraint` interface:
 
 ```typescript
-import { PopulationConstraint } from '@libre-net-pe/schedule-me-gen';
+import { PopulationConstraint, Chromosome } from '@libre-net-pe/schedule-me-gen';
 
 class MyCustomConstraint implements PopulationConstraint {
   compute(chromosome: Chromosome): number {

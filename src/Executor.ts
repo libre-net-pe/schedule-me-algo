@@ -1,5 +1,5 @@
 import { GenerationStrategy } from "./generation/GenerationStrategy";
-import { initizalizePopulation } from "./generation/initizalizePopulation";
+import { initializePopulation } from "./generation/initializePopulation";
 import { TimeSlot } from "./types/domain/TimeSlot";
 import { Offering } from "./types/domain/Offering";
 import { Individual } from "./types/genetics/Individual";
@@ -74,7 +74,7 @@ export class Executor {
    */
   run(): Individual {
     // Initialize population
-    let population = initizalizePopulation(this.codec, this.populationSize)
+    let population = initializePopulation(this.codec, this.populationSize)
     
     // Track the best individual across all generations
     let bestIndividual = population.reduce((best, current) => 
