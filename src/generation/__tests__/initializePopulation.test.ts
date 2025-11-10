@@ -7,8 +7,8 @@ import { Offering } from '@/types/domain/Offering';
 describe('initializePopulation', () => {
   const createTestCodec = () => {
     const timeSlots: TimeSlot[] = [
-      { day: Day.Monday, startTime: '08:00', endTime: '08:45', durationInMinutes: 45 },
-      { day: Day.Monday, startTime: '08:45', endTime: '09:30', durationInMinutes: 45 }
+      { day: Day.Monday, start: '08:00', end: '08:45' },
+      { day: Day.Monday, start: '08:45', end: '09:30' }
     ];
 
     const offerings: Offering[] = [
