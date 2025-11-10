@@ -1,18 +1,18 @@
 import { Codec } from "../codec/Codec";
 import { Chromosome } from "../types/genetics/Chromosome";
 import { FitnessStrategy } from "./FitnessStrategy";
-import { DuplicatesContraint } from "./metrics/DuplicatesConstraint";
+import { DuplicatesConstraint } from "./metrics/DuplicatesConstraint";
 import { RequirementsConstraint } from "./metrics/RequirementsConstraint";
 
 export class RuleBasedFitnessStrategy implements FitnessStrategy {
     codec: Codec
     requirementContraint: RequirementsConstraint
-    duplicatesConstraint: DuplicatesContraint
+    duplicatesConstraint: DuplicatesConstraint
 
     constructor(codec: Codec) {
         this.codec = codec
         this.requirementContraint = new RequirementsConstraint(codec)
-        this.duplicatesConstraint = new DuplicatesContraint()
+        this.duplicatesConstraint = new DuplicatesConstraint()
     }
 
     compute(chromosome: Chromosome): number {

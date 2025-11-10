@@ -17,13 +17,13 @@ export { FitnessStrategy } from './fitness/FitnessStrategy';
 export { RuleBasedFitnessStrategy } from './fitness/RuleBasedFitnessStrategy';
 
 // Constraints
-export { PopulationConstriant } from './fitness/metrics/PopulationConstriant';
-export { DuplicatesContraint } from './fitness/metrics/DuplicatesConstraint';
+export { PopulationConstraint } from './fitness/metrics/PopulationConstraint';
+export { DuplicatesConstraint } from './fitness/metrics/DuplicatesConstraint';
 export { RequirementsConstraint } from './fitness/metrics/RequirementsConstraint';
 
 // Generation strategies
 export { GenerationStrategy } from './generation/GenerationStrategy';
-export { initizalizePopulation } from './generation/initizalizePopulation';
+export { initializePopulation } from './generation/initializePopulation';
 
 // Selection strategies
 export { SelectionStrategy } from './select/SelectStrategy';

@@ -1,5 +1,5 @@
 import { Chromosome } from "../../types/genetics/Chromosome";
 
-export interface PopulationConstriant {
+export interface PopulationConstraint {
     compute(chromosome: Chromosome): number
 }

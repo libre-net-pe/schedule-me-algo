@@ -24,7 +24,7 @@ export class WheelRouletteSelectionStrategy implements SelectionStrategy {
 
         const selected = this.population.at(selectedPosition)
         if (!selected) {
-            throw new Error('Failed to select an individual from the population')
+            throw new Error('Cannot select an individual from an empty population')
         }
         return selected
     }
